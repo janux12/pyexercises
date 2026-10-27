@@ -48,3 +48,20 @@ print(combined)
 ```
 
 What operator is used to combine two strings?
+
+---
+## 2026-10-27 15:23, in .
+
+**Me:** how to add two numbers in python
+
+**Tutor:**
+
+Adding two numbers in Python uses the built-in arithmetic operator `+`.
+
+```python
+def add_two_numbers(a, b):
+    # TODO: return the sum of a and b
+    pass
+```
+
+What is the operator that combines `a` and `b` in the function body?

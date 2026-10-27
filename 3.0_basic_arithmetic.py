@@ -31,3 +31,28 @@ DELIVERABLE
 
 
 # Your code below
+number_1 = float(input("enter the first number:"))
+number_2 = float(input("enter the second number"))
+
+print(number_1, number_2)
+
+# sum of the numbers
+sum = number_1 + number_2
+print("the sum of two numbers is: ", sum)
+
+# difference of two numbers 
+diff = number_2 - number_1
+print("the difference between two numbers is : ", diff)
+
+# multiplication of two numbers 
+product = number_1 * number_2
+print ("the product of the two is: ", product)
+
+#division of two numbers 
+
+if number_2 != 0:
+    divison = number_1 / number_2 
+    print("the division of two number is:" , divison)
+else:
+    print("the number 2 is zero")
+    
