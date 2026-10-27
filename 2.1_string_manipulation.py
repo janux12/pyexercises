@@ -21,7 +21,7 @@ CHECK IT YOURSELF
     For each of your four results, say in a comment whether it is what you expected.
 
 DELIVERABLE
-    This file, with your comments and your code.
+    This file, With your comments and your code.
 """
 
 # 1. In:
