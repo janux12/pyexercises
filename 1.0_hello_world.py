@@ -22,10 +22,10 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My message, and why:
+# 1. In: a string of my name
+# 2. Process: a for loop printing my name 5 time
+# 3. Out: my name is printed 5 times
+# 4. My message, and why: write a phyton file to print my name 5 times using phyton 
 
 
 # Your code below
@@ -34,3 +34,6 @@ print("1.Hello")
 print("2.Hello")
 print("3.Hello")
 print("4.Hello")
+
+for i in range(0,4):
+    print("Hello")

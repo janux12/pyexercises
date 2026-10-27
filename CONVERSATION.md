@@ -16,3 +16,12 @@ Printing a string in Python is done with the `print()` function.
 ```
 
 What is the name of the function used to print something in Python?
+
+---
+## 2026-10-27 13:43, in .
+
+**Me:** what is python
+
+**Tutor:**
+
+Refused, off topic.
