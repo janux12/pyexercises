@@ -46,7 +46,7 @@ print("the difference between two numbers is : ", diff)
 
 # multiplication of two numbers 
 product = number_1 * number_2
-print ("the product of the two is: ", product)
+print ("The product of the two is: ", product)
 
 #division of two numbers 
 
@@ -55,4 +55,4 @@ if number_2 != 0:
     print("the division of two number is:" , divison)
 else:
     print("the number 2 is zero")
-    
+
