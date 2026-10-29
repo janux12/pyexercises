@@ -26,37 +26,24 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. What my list is about, and what I computed from it:
+# 1. In:A list of marketing channels.
+# 2. Process:The program displays the list, one item, the sorted list, and the number of channels.
+# 3. Out:The list, one channel, the sorted list, and the total number of channels.
+# 4. What my list is about, and what I computed from it:My list is about marketing channels. I counted them to see how many channels I can use.
 
 
 # Your code below
-number_1 = 2
-number_2 = 3
-number_3 = 4
-number_4 = 5
+campaign_budgets = [100, 200, 150, 300, 250, 400, 350, 500]
 
-print(number_1)
-print(number_2)
-print(number_3)
-print(number_4)
+print("Listing all the budgets")
+print(campaign_budgets)
 
-list_of_numbers = [10,9,1,7,8,6,2,3,4,5]
-print("listing all the numbers in the list")
-print(list_of_numbers)
-print("listing the third item in the list")
-print(list_of_numbers[2])
+print("Listing the third item in the list")
+print(campaign_budgets[2])
 
-#sorting the list 
-print("the list of numbers after sorted")
-list_of_numbers.sort()
-print(list_of_numbers[2])
+print("The list of budgets after sorted")
+campaign_budgets.sort()
+print(campaign_budgets)
 
-#removing the last item from the list
-list_of_numbers.pop()
-
-# list of numbers after removing the last 
-print("The list of numbers of numbers after removing the last item from the list")
-print(list_of_numbers)
+print("The total of the budgets")
+print(sum(campaign_budgets))
