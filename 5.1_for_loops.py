@@ -16,7 +16,7 @@ WHAT THE AI CANNOT KNOW
     Open your 4.0 file, copy the list across, and say in a comment what you decided.
 
 CHECK IT YOURSELF
-    Count the lines your program printed. There must be exactly as many as items in your
+    Count the lines your program Printed. There must be exactly as many as items in your
     list. If there is one more or one less, you have an off-by-one, and it is worth
     understanding now rather than in the exam.
 
