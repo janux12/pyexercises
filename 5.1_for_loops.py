@@ -24,20 +24,15 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:A list of numbers from exercise 4.0.
-# 2. Process:The program displays each number, its position, and its double.
-# 3. Out:One line for each number in the list.
-# 4. What I compute for each item, and why it is worth showing:I calculate double each number to see its value multiplied by 2.
+# 1. In:A list of names
+# 2. Process:The program goes through every name and counts its letters.
+# 3. Out:Each name, its position, and its number of letters.
+# 4. What I compute for each item, and why it is worth showing:I calculate the length of each name using len()
 
 
 # Your code below
 
-list_of_numbers = [10, 9, 1, 7, 8, 6, 2, 3, 4, 5]
+names = ["Jana", "Adam", "Sarah", "Alex", "Lina"]
 
-for i in range(len(list_of_numbers)):
-    print(list_of_numbers[i], "position", i + 1, "double", list_of_numbers[i] * 2)
-
-# Check: The program printed 10 lines for 10 numbers.
-# Check: The first number is 10, its position is 1, and its double is 20.
-# Check: The second number is 9, its position is 2, and its double is 18.
-# Check: The third number is 1, its position is 3, and its double is 2.
+for i in range(len(names)):
+    print(names[i], "position", i + 1, "number of letters", len(names[i]))
