@@ -17,7 +17,7 @@ WHAT THE AI CANNOT KNOW
 
 CHECK IT YOURSELF
     Ask your program for a field that does not exist. Note what happens in a comment,
-    then make it survive that case.
+    then make it survive that Case.
 
 DELIVERABLE
     This file, with your comments and your code.
