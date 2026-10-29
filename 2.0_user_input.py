@@ -37,7 +37,7 @@ name = input("enter your name:")
 age = input("enter you age:")
 
 print(name)
-print(Age)
+print(age)
 
 print(name, age)
 print("hi, my name is " + name + " and my age is " + age)
