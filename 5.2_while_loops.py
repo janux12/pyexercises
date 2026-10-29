@@ -17,7 +17,7 @@ WHAT THE AI CANNOT KNOW
     how many attempts you allow, and what your program does when that limit is reached.
 
     Accepting "Yes", "yes" and " yes " as the same answer is your decision too. Make it
-    and write it down.
+    And write it down.
 
 CHECK IT YOURSELF
     Run it and never give the expected answer. If your program is still running after
