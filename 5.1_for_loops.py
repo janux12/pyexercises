@@ -24,10 +24,20 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. What I compute for each item, and why it is worth showing:
+# 1. In:A list of numbers from exercise 4.0.
+# 2. Process:The program displays each number, its position, and its double.
+# 3. Out:One line for each number in the list.
+# 4. What I compute for each item, and why it is worth showing:I calculate double each number to see its value multiplied by 2.
 
 
 # Your code below
+
+list_of_numbers = [10, 9, 1, 7, 8, 6, 2, 3, 4, 5]
+
+for i in range(len(list_of_numbers)):
+    print(list_of_numbers[i], "position", i + 1, "double", list_of_numbers[i] * 2)
+
+# Check: The program printed 10 lines for 10 numbers.
+# Check: The first number is 10, its position is 1, and its double is 20.
+# Check: The second number is 9, its position is 2, and its double is 18.
+# Check: The third number is 1, its position is 3, and its double is 2.
