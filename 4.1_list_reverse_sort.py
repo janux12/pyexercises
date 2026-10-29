@@ -25,10 +25,40 @@ DELIVERABLE
     This file, with your comments and your code.
 """
 
-# 1. In:
-# 2. Process:
-# 3. Out:
-# 4. My four orders, and which ones modify the original:
+# 1. In:A list of marketing campaign budgets.
+# 2. Process:The program displays the list in four different orders.
+# 3. Out:Four different orders and the original list at the end.
+# 4. My four orders, and which ones modify the original:My four orders, and which ones modify the original:
+# sorted() and sorted(..., reverse=True) create copies.
+# sort() and reverse() modify the original list.
 
 
 # Your code below
+budgets = [100, 200, 150, 300, 250, 400, 350, 500]
+
+print("The original list")
+print(budgets)
+
+print("The list sorted")
+print(sorted(budgets))
+
+print("The list sorted from highest to lowest")
+print(sorted(budgets, reverse=True))
+
+print("The list sorted using sort()")
+budgets_copy = budgets.copy()
+budgets_copy.sort()
+print(budgets_copy)
+
+print("The list in reverse order")
+budgets_copy = budgets.copy()
+budgets_copy.reverse()
+print(budgets_copy)
+
+print("The original list at the end")
+print(budgets)
+
+# Check: The original list stayed the same.
+# Check: sorted() created new sorted lists.
+# Check: sort() changed the copy, not the original.
+# Check: reverse() changed the copy, not the original.
