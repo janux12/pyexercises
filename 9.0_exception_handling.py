@@ -35,3 +35,52 @@ DELIVERABLE
 
 
 # Your code below
+
+# 1. What goes in?
+# The user enters a number.
+
+# 2. What happens to it?
+# Python converts the input into a number and divides 100 by it.
+
+# 3. What comes out?
+# The result of the division or an error message.
+
+# 4. The two failures, and whether they deserve the same message:
+# The first failure is entering text instead of a number.
+# The second failure is entering zero.
+# They should have different messages because the problems are different.
+
+# Catching each error separately is better because we can
+# give the user a clear message for each problem.
+
+# The program allows 3 attempts.
+
+# Check:
+# 1. Entering 10 gives the result 10.0.
+# 2. Entering 0 displays a division by zero message.
+# 3. Entering abc displays an invalid number message.
+# 4. Pressing Enter without typing displays an empty input message.
+
+
+for i in range(3):
+    try:
+        number = input("Enter a number: ")
+
+        if number == "":
+            raise ValueError
+
+        number = float(number)
+
+        result = 100 / number
+
+        print("Result:", result)
+        break
+
+    except ZeroDivisionError:
+        print("You cannot divide by zero.")
+
+    except ValueError:
+        print("Please enter a valid number.")
+
+else:
+    print("You have used all your attempts.")
