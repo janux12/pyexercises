@@ -29,3 +29,80 @@ DELIVERABLE
 """
 
 # Your code below
+
+import re
+
+# 1. What goes in?
+# The user enters an email, a phone number and a campaign code.
+
+# 2. What happens to it?
+# Python checks if the three values follow specific rules
+# using regular expressions.
+
+# 3. What comes out?
+# The information is saved only if all three values are valid.
+
+# 4. What are your three fields?
+
+# Field 1: Email
+# Accepts letters, numbers, dots, underscores and hyphens
+# before @, followed by a domain and an extension of 2 to 4 letters.
+# Pattern explanation:
+# [A-Za-z0-9._-]+ means letters, numbers, dots, underscores or hyphens.
+# @ means the email must contain @.
+# [A-Za-z0-9-]+ means the domain name.
+# \. means a dot.
+# [A-Za-z]{2,4} means an extension of 2 to 4 letters.
+
+# Field 2: Phone number
+# Must contain exactly 10 digits and start with 0.
+# Pattern explanation:
+# 0 means the first digit must be zero.
+# [1-9] means the second digit must be between 1 and 9.
+# [0-9]{8} means exactly 8 more digits.
+
+# Field 3: Campaign code
+# Must start with CMP- followed by exactly 4 digits.
+# Pattern explanation:
+# CMP- means the code must start with CMP-.
+# [0-9]{4} means exactly 4 digits.
+
+
+while True:
+
+    email = input("Enter your email: ")
+    phone = input("Enter your phone number: ")
+    campaign = input("Enter your campaign code: ")
+
+    valid_email = re.fullmatch(
+        r"[A-Za-z0-9._-]+@[A-Za-z0-9-]+\.[A-Za-z]{2,4}", email
+    )
+
+    valid_phone = re.fullmatch(r"0[1-9][0-9]{8}", phone)
+
+    valid_campaign = re.fullmatch(r"CMP-[0-9]{4}", campaign)
+
+    if valid_email and valid_phone and valid_campaign:
+
+        print("All information is valid!")
+        print("Information saved successfully.")
+
+        saved_email = email
+        saved_phone = phone
+        saved_campaign = campaign
+
+        break
+
+    else:
+        print("Some information is incorrect.")
+
+        if not valid_email:
+            print("Invalid email.")
+
+        if not valid_phone:
+            print("Invalid phone number.")
+
+        if not valid_campaign:
+            print("Invalid campaign code.")
+
+        print("Please try again.")
